@@ -2,15 +2,23 @@ import Link from "next/link";
 
 function Header() {
 	return (
-		<header className="flex justify-between bg-red-800 px-8 py-4 text-white">
-			<Link href="/" className="flex items-center cursor-pointer">
-				<img src="/magic wand.svg" alt="logo" width="24px" />
+		<header className="block  md:flex md:justify-between bg-[#384679] px-8 py-4 text-white">
+			<Link
+				href="/"
+				className="text-center md:flex items-center cursor-pointer"
+			>
+				<img
+					src="/magic wand.svg"
+					alt="logo"
+					width="24px"
+					className="hidden md:block"
+				/>
 				<p className="font-bold text-2xl pl-4 uppercase">
 					Wizard World
 				</p>
 			</Link>
-			<nav>
-				<ul className="flex gap-10 items-center">
+			<nav className="text-center">
+				<ul className="block mx-auto md:flex gap-10 items-center">
 					<li className="cursor-pointer font-medium text-md">
 						<Link href="/elixirs">Elixirs</Link>
 					</li>

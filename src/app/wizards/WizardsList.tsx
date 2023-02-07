@@ -12,7 +12,7 @@ const fetchWizards = async () => {
 const WizardsList = async () => {
 	const wizards = await fetchWizards();
 	return (
-		<div>
+		<div className="flex flex-col lg:flex-row rounded-lg overflow-hidden h-auto lg:h-32 border shadow-md">
 			{wizards.map((wizard) => (
 				<p key={wizard.id}>
 					<Link href={`/wizards/${wizard.id}`}>

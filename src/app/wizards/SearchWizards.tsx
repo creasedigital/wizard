@@ -51,7 +51,7 @@ const SearchWizards = () => {
 				/>
 				<button
 					type="submit"
-					className="bg-red-800 text-white font-bold py-2 px-4 rounded-lg "
+					className="bg-[#384679] text-white font-bold py-2 px-4 rounded-lg "
 					role={"button"}
 				>
 					Search
