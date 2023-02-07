@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 
@@ -9,7 +10,9 @@ export default function Home() {
 					href="/elixirs"
 					className="flex flex-col lg:flex-row rounded-lg overflow-hidden h-auto lg:h-32 border shadow-lg"
 				>
-					<img
+					<Image
+						width={500}
+						height={500}
 						className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
 						src="/elixir.jpg"
 						alt="elixir"
@@ -30,7 +33,9 @@ export default function Home() {
 					href="/spells"
 					className="flex flex-col lg:flex-row rounded-lg overflow-hidden h-auto lg:h-32 border shadow-lg"
 				>
-					<img
+					<Image
+						width={"500"}
+						height={"500"}
 						className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
 						src="/spellsIcon.jpg"
 						alt="spell"
@@ -51,7 +56,9 @@ export default function Home() {
 					href="/wizards"
 					className="flex flex-col lg:flex-row rounded-lg overflow-hidden h-auto lg:h-32 border shadow-md"
 				>
-					<img
+					<Image
+						width={500}
+						height={500}
 						className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
 						src="/wizard.jpg"
 						alt="wizard"

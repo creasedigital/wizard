@@ -5,6 +5,7 @@ import WizardsList from "./WizardsList";
 const Wizards = () => {
 	return (
 		<div>
+			{/* @ts-ignore */}
 			<SearchWizards />
 			{/* @ts-ignore */}
 			<WizardsList />

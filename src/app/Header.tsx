@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 function Header() {
@@ -7,10 +8,11 @@ function Header() {
 				href="/"
 				className="text-center md:flex items-center cursor-pointer"
 			>
-				<img
+				<Image
 					src="/magic wand.svg"
 					alt="logo"
-					width="24px"
+					width="24"
+					height={"24"}
 					className="hidden md:block"
 				/>
 				<p className="font-bold text-2xl pl-4 uppercase">

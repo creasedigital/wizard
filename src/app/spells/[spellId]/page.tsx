@@ -23,28 +23,6 @@ const SpellPage = async ({ params: { spellId } }: PageProps) => {
 
 	return (
 		<div>
-			{/* <h2>
-				<span>This is the page of the weakset wizzard: </span>
-				<span>
-					{`${
-						spell.firstName
-							? `${
-									spell.firstName.toUpperCase() +
-									" " +
-									spell.lastName.toUpperCase()
-							  }`
-							: spell.lastName.toUpperCase()
-					}`}
-				</span>
-			</h2>
-			<p>👻 Get Your Favourite Potions. Muhuhuhuahahaha!!! 👽</p>
-			<ul className="flex flex-col gap-4 m-2 ">
-				{spell.elixirs.map((elixir) => (
-					<li key={elixir.id} className="py-4 bg-red-100">
-						Elixir Name: {elixir.name}
-					</li>
-				))}
-			</ul> */}
 			<h2>Spell Name: {spell.name}</h2>
 			{spell.effect && <p>Spell Effect: {spell.effect}</p>}
 			<div>
@@ -55,7 +33,7 @@ const SpellPage = async ({ params: { spellId } }: PageProps) => {
 						{spell.canBeVerbal ? (
 							<span>The spell can be chanted</span>
 						) : (
-							<span>The spell can't be chanted</span>
+							<span>The spell cannot be chanted</span>
 						)}
 					</p>
 				)}
