@@ -1,9 +1,6 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import React, { useState, FormEvent } from "react";
-// import { useRouterParams } from "../../hooks/useRouterFilter";
-import { useSearchParams } from "next/navigation";
 import { buildQuery } from "@/utils/buildQuery";
 
 const SearchWizards = () => {
@@ -33,25 +30,24 @@ const SearchWizards = () => {
 
 	return (
 		<div>
-			<h1 className="font-bold text-3xl">Search For Wizards</h1>
-			<form onSubmit={handleSearch}>
+			<form onSubmit={handleSearch} className="ml-4 mt-2 mb-4">
 				<input
 					type={"text"}
 					value={fname}
 					placeholder="enter wizard's firstname"
 					onChange={(e) => setFName(e.target.value)}
-					className="m-2"
+					className="m-2 border px-4 py-2 rounded-lg"
 				/>
 				<input
 					type={"text"}
 					value={lname}
 					placeholder="enter wizard's last name"
 					onChange={(e) => setLName(e.target.value)}
-					className="m-2"
+					className="m-2 border px-4 py-2 rounded-lg"
 				/>
 				<button
 					type="submit"
-					className="bg-[#384679] text-white font-bold py-2 px-4 rounded-lg "
+					className="bg-[#384679] block md:inline-block m-2 text-white font-bold py-2 px-4 rounded-lg "
 					role={"button"}
 				>
 					Search

@@ -11,6 +11,7 @@ const fetchSpells = async () => {
 
 const SpellsList = async () => {
 	const spells = await fetchSpells();
+	console.log(spells);
 
 	return (
 		<div>

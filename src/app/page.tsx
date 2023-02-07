@@ -1,8 +1,5 @@
-import { Inter } from "@next/font/google";
 import Link from "next/link";
 import styles from "./page.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
 	return (
@@ -10,8 +7,7 @@ export default function Home() {
 			<div className="p-4">
 				<Link
 					href="/elixirs"
-					className="
-					flex flex-col lg:flex-row rounded-lg overflow-hidden h-auto lg:h-32 border shadow-lg"
+					className="flex flex-col lg:flex-row rounded-lg overflow-hidden h-auto lg:h-32 border shadow-lg"
 				>
 					<img
 						className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"

@@ -22,10 +22,12 @@ const WizardPage = async ({ params: { wizardId } }: PageProps) => {
 	if (!wizard.id) return notFound();
 
 	return (
-		<div>
-			<h2>
-				<span>This is the page of the weakset wizzard: </span>
-				<span>
+		<div className="p-2">
+			<p className="text-center mb-2">
+				.👻 Get Your Favourite Potions. Muhuhuhuahahaha!!! 👽
+			</p>
+			<h2 className="text-center font-semibold text-md text-gray-700">
+				<span className="font-semibold text-2xl text-gray-900">
 					{`${
 						wizard.firstName
 							? `${
@@ -37,10 +39,12 @@ const WizardPage = async ({ params: { wizardId } }: PageProps) => {
 					}`}
 				</span>
 			</h2>
-			<p>👻 Get Your Favourite Potions. Muhuhuhuahahaha!!! 👽</p>
 			<ul className="flex flex-col gap-4 m-2 ">
 				{wizard.elixirs.map((elixir) => (
-					<li key={elixir.id} className="py-4 bg-red-100">
+					<li
+						key={elixir.id}
+						className="flex flex-col p-2 lg:p-4 rounded-lg overflow-hidden h-auto border"
+					>
 						Elixir Name: {elixir.name}
 					</li>
 				))}

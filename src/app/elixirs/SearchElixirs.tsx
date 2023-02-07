@@ -51,7 +51,7 @@ const SearchElixirs = () => {
 					value={name}
 					placeholder="enter spell name"
 					onChange={(e) => setName(e.target.value)}
-					className="m-2"
+					className="m-2 border px-4 py-2 rounded-lg"
 				/>
 
 				<select
@@ -70,7 +70,7 @@ const SearchElixirs = () => {
 				</select>
 				<button
 					type="submit"
-					className="bg-[#384679] text-white font-bold py-2 px-4 rounded-lg "
+					className="bg-[#384679] block md:inline-block m-2 text-white font-bold py-2 px-4 rounded-lg "
 					role={"button"}
 				>
 					Search
